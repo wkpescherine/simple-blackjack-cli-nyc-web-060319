@@ -48,15 +48,13 @@ def hit?
   
   if action == "h"
     deal_card
-    display_card_total(new_total)
   elsif action =="s" 
     display_card_total
   else
     invalid_command
-    prompt_user
+    hit?
   end
-  
-  new_total
+
 end
 
 def invalid_command
