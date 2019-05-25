@@ -47,7 +47,7 @@ def hit?
   action = get_user_input
   
   if action == "h"
-    new_total = deal_card+ initial_round
+    deal_card
     display_card_total(new_total)
   elsif action =="s" 
     display_card_total
